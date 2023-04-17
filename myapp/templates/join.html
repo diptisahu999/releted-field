@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+  </head>
+  <body>
+    <center>
+       <h1>Show the name<h2>
+       {% comment %} {{d}} {% endcomment %}
+       
+       {% for deptemp in d %}
+         {{ deptemp.emp_name.name }}
+         {{ deptemp.emp_name.email }}
+         {{ deptemp.emp_name.password }}
+         {{ deptemp.emp_name.mobile }}
+         {{ deptemp.salary.salary }}
+       {% endfor %}
+
+
+       {% comment %} {% for deptemp in d %}
+        {{ deptemp.emp_no.first_name }}
+        {{ deptemp.emp_no.last_name }}
+        {{ deptemp.dept_no.dept_name }}
+       {% endfor %} {% endcomment %}
+
+
+    </center>
+  </body>
+</html>
